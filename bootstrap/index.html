@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lesson Bootstrap</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- header -->
+        <header class="header d-flex align-items-center">
+            <div class="container">
+                <div class="col-md-6">
+                    <h1 class="text-success">Hello ,Welcome To My Planet</h1>
+                    <p class="text-white">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn btn-lg btn-success">See more</a>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </header>
+        <main>
+            <div id="about" class="py-5 border-bottom border-success">
+                <h2 class="text-center">About</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="avatar-img col-md-2">
+                            <img src="img/avatar.png" alt="Avatar" class="rounded-circle border-success border img-fluid" />
+                        </div>
+                        <div class="avatar-text col-md-10">
+                            <h3>Dr. Alien</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat dolores eligendi incidunt sunt dolorum, necessitatibus nobis odio exercitationem error ullam minus aperiam! Aperiam illo magni eos dolorem
+                                sint nemo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 border-bottom border-success">
+                <h2 class="text-center mb-4">Portfolio</h2>
+                <div class="accordion-menu">
+                    <div class="accordion pe-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <img src="img/portfolio/adaptive-page.png" alt="Adaptive" class="img" />
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <img src="img/portfolio/bislite.png" alt="Adaptive" class="img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio d-flex flex-wrap align-items-center">
+                            <div class="col-md-4"><img src="img/portfolio/portfolio-1.png" alt="Avatar" class="img" /></div>
+                            <div class="col-md-4"><img src="img/portfolio/portfolio-2.jpg" alt="Avatar" class="img" /></div>
+                            <div class="col-md-4"><img src="img/portfolio/portfolio-3.jpg" alt="Avatar" class="img" /></div>
+                            <div class="col-md-4"><img src="img/portfolio/portfolio-4.jpg" alt="Avatar" class="img" /></div>
+                            <div class="col-md-4"><img src="img/portfolio/portfolio-5.jpg" alt="Avatar" class="img" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 border-bottom border-success">
+                <h2 class="text-center mb-4">Blog</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block">
+                                <div class="border rounded border-3 border-secondary">
+                                    <span><img src="img/blog/design-1.jpg" alt="Design" class="rounded" /></span>
+                                    <h3 class="p=3">Post Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <nav class="bg-secondary"><a href="#" class="nav">Read more</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item border">
+                            <div class="d-block">
+                                <div class="border rounded border-3 border-secondary">
+                                    <span><img src="img/blog/design-2.jpg" alt="Design" class="rounded" /></span>
+                                    <h3 class="p=3">Post Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <nav class="bg-secondary"><a href="#" class="nav">Read more</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item border">
+                            <div class="d-block">
+                                <div class="border rounded border-3 border-secondary">
+                                    <span><img src="img/blog/design-3.jpg" alt="Design" class="rounded" /></span>
+                                    <h3 class="p=3">Post Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <nav class="bg-secondary"><a href="#" class="nav">Read more</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <h2 class="text-center m-5">Contact Me</h2>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Your Name</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="YourEmail" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                        <span class="input-group-text" id="basic-addon2">@email.com</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="mb-5"><button class="input-btn btn btn-success d-block mx-auto" type="submit">Send</button></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a href="#" class="text-decoration-none text-white-50">Copyrigths</a>
+                </div>
+            </nav>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

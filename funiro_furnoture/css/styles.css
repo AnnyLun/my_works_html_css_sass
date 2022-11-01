@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: Open Sans;
+    height: 100vh;
+}
+
+.header, .footer {
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.75);
+    height: 70px;
+}
+
+.header-inner {
+    width: 1025px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(58, 58, 58, 1);
+    text-decoration: none;
+}
+
+.header-search {
+    position: relative;
+    align-items: center;
+}
+
+.icon-search {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.placeholder {
+    padding: 12px 0 12px 41px;
+    font-size: 14px;
+    color:rgba(97, 97, 97, 1);
+    line-height: 21px;
+    width: 295px;
+    height: 45px;
+}
+
+.product-cards {
+    width: 1025px;
+    margin: 38px auto 183px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 294px;
+    height: 446px;
+    position: relative;
+    margin-bottom: 48px;
+    margin-right: 70px;
+}
+
+.product-image:hover::before {
+    content: "";
+    width: 294px;
+    height: 301px;
+    position: absolute;
+    background-image: url(../img/image_3_1.png);
+    top: 0;
+    left: 0;
+}
+
+.product-image {
+    width: 294px;
+    height: 301px;
+    position: relative;
+    object-fit: contain;
+}
+
+.product-discount{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    right: 24px; 
+    top: 24px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.ellipse-1 {
+    background-image: url(../img/ellipse_1.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    right: 24px; 
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.ellipse-2 {
+    background-image: url(../img/ellipse_2.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    right: 24px; 
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.ellipse-3 {
+    background-image: url(../img/ellipse_3.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    right: 24px; 
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.product-discount-text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.star-1 {
+    background-image: url(../img/star_1.png);
+    width: 30px;
+    height: 30px;
+}
+
+.product-card:nth-last-child(3n) {
+    margin-right: 0;
+}
+
+.product-star {
+    position: absolute;
+    top: -1px;
+    right: 1px;
+}
+
+.product-box-text {
+    padding: 16px 0 30px 16px;
+    height: 145px;
+    width: 294px;
+    background-color: rgba(244, 245, 247, 1);
+    color: rgba(58, 58, 58, 1);
+}
+
+.price{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.price-discount {
+    color: rgba(176, 176, 176, 1);
+    padding-left: 16px;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.product-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(137, 137, 137, 1);
+    margin: 8px 0 8px;
+}
+
+.link-heading {
+    font-size: 24px;
+    line-height: 28px;  
+    text-decoration: none;  
+    color:rgba(58, 58, 58, 1);
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 25px; 
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(58, 58, 58, 1);
+}
+
+.link-copyright {
+    color: rgba(58, 58, 58, 1);
+    font-weight: 600;
+    line-height: 21.6px;
+}
